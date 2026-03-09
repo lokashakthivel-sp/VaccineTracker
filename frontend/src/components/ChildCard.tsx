@@ -1,5 +1,4 @@
-import React from "react";
-import { format, differenceInYears, differenceInMonths } from "date-fns";
+import { format } from "date-fns";
 import type { Child } from "../types";
 import { formatAge } from "../lib/vaccineSchedule";
 

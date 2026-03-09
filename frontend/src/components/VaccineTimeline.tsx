@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { format } from 'date-fns';
 import type { VaccineScheduleGroup, VaccineScheduleEntry } from '../types';
 import { VaccineStatusBadge } from './VaccineStatusBadge';
@@ -25,8 +25,6 @@ export function VaccineTimeline({ groups, onVaccineClick, isDoctor }: Props) {
         const hasUpcoming = group.entries.some(e => e.status === 'upcoming');
         const allComplete = group.entries.every(e => e.status === 'completed');
         const isExpanded = expandedGroup === gi;
-        const ageWeeks = group.ageWeeks;
-        const isPast = ageWeeks < 52 ? true : ageWeeks <= 260;
 
         let headerColor = '#0F172A';
         let headerBg = '#F8FAFC';

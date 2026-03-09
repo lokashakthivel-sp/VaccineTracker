@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useChildren } from "../hooks/useChildren";
 import { ChildCard } from "../components/ChildCard";
@@ -6,7 +6,7 @@ import { Modal } from "../components/Modal";
 import { ChildForm } from "../components/ChildForm";
 import { WhatsAppSettings } from "../components/WhatsAppSettings";
 import { ChildDetailView } from "./ChildDetailView";
-import type { Child, ChildFormData } from "../types";
+import type { Child } from "../types";
 
 export function ParentDashboard() {
   const { profile } = useAuth();

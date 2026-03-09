@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import type {
-  VaccineScheduleEntry,
-  VaccinationUpdateData,
-  VaccinationStatus,
-} from "../types";
+import type { VaccineScheduleEntry, VaccinationUpdateData } from "../types";
 import { format } from "date-fns";
 
 interface Props {
@@ -35,7 +31,7 @@ const labelStyle: React.CSSProperties = {
 
 export function VaccinationForm({ entry, onSubmit, onCancel }: Props) {
   const existing = entry.vaccination;
-  const isEdit = existing ? true : false
+  const isEdit = existing ? true : false;
   const [form, setForm] = useState<VaccinationUpdateData>({
     status: "issued",
     administered_date:

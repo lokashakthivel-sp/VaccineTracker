@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { supabase } from "../lib/supabase";
 import type { Child } from "../types";
-import { ChildCard } from "../components/ChildCard";
 import { ChildDetailView } from "./ChildDetailView";
 import { formatAge } from "../lib/vaccineSchedule";
 import { DoctorLocationSetup } from "../components/DoctorLocationSetup";

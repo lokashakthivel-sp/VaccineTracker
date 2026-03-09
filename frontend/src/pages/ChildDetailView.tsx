@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { format } from "date-fns";
 import type { Child, VaccineScheduleEntry } from "../types";
 import { useVaccinations } from "../hooks/useVaccinations";
@@ -8,7 +8,6 @@ import {
   formatAge,
 } from "../lib/vaccineSchedule";
 import { VaccineTimeline } from "../components/VaccineTimeline";
-import { VaccineStatusBadge } from "../components/VaccineStatusBadge";
 import { Modal } from "../components/Modal";
 import { VaccinationForm } from "../components/VaccinationForm";
 import { useAuth } from "../context/AuthContext";

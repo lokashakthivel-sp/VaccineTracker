@@ -16,7 +16,6 @@ export function WhatsAppSettings() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
   const [sandboxInfo, setSandboxInfo] = useState<SetupInfo | null>(null);
-  const [showSteps, setShowSteps] = useState(false);
 
   useEffect(() => {
     if (!profile) return;
