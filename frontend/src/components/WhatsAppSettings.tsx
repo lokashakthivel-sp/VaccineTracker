@@ -1,7 +1,3 @@
-/**
- * WhatsAppSettings
- * Lets a parent enter their phone number and receive WhatsApp vaccine reminders.
- */
 import React, { useState, useEffect } from "react";
 import { supabase } from "../lib/supabase";
 import { savePhoneNumber, getSetupInfo } from "../lib/apiClient";
@@ -15,7 +11,7 @@ export function WhatsAppSettings() {
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
-  const [sandboxInfo, setSandboxInfo] = useState<SetupInfo | null>(null);
+  const [setupInfo, setsetupInfo] = useState<SetupInfo | null>(null);
 
   useEffect(() => {
     if (!profile) return;
@@ -30,7 +26,7 @@ export function WhatsAppSettings() {
           setPhone(data.phone_number);
         }
       });
-    getSetupInfo().then(setSandboxInfo);
+    getSetupInfo().then(setsetupInfo);
   }, [profile]);
 
   const handleSave = async (e: React.FormEvent) => {
@@ -64,15 +60,15 @@ export function WhatsAppSettings() {
     transition: "border-color 0.15s",
   };
 
-  const apiDown = sandboxInfo === null;
+  const apiDown = setupInfo === null;
 
   return (
     <div
       style={{
-        background: "#fff",
+        background: "#f8feff",
         borderRadius: 16,
         padding: "22px 24px",
-        border: "1.5px solid #E2E8F0",
+        border: "1px solid #99ecff",
         boxShadow: "0 2px 12px rgba(0,0,0,0.05)",
       }}
     >
@@ -153,8 +149,7 @@ export function WhatsAppSettings() {
             marginBottom: 14,
           }}
         >
-          ⚠️ Python API is not running — start it with{" "}
-          <code>uvicorn main:app --reload</code> to enable WhatsApp features.
+          ⚠️ Python API is not running — start it to enable WhatsApp features.
         </div>
       )}
 
@@ -241,7 +236,7 @@ export function WhatsAppSettings() {
         </div>
       )}
 
-      {sandboxInfo && !sandboxInfo.green_api_configured && (
+      {setupInfo && !setupInfo.green_api_configured && (
         <div
           style={{
             background: "#FFF7ED",
@@ -253,70 +248,9 @@ export function WhatsAppSettings() {
             fontFamily: "DM Sans, sans-serif",
           }}
         >
-          ⚠️ Green API is not configured. Add <code>GREEN_API_INSTANCE_ID</code>{" "}
-          and <code>GREEN_API_TOKEN</code> to <code>api/.env</code>.
+          ⚠️ Green API is not configured.
         </div>
       )}
-
-      {/* 
-      {sandboxInfo?.green_api_configured && (
-        <div>
-          <button
-            onClick={() => setShowSteps((v) => !v)}
-            style={{
-              background: "none",
-              border: "none",
-              color: "#25D366",
-              cursor: "pointer",
-              fontSize: "0.78rem",
-              fontWeight: 700,
-              fontFamily: "DM Sans, sans-serif",
-              padding: 0,
-              textDecoration: "underline",
-              textUnderlineOffset: 3,
-            }}
-          >
-            {showSteps ? "▲ Hide" : "▼ Show"} how Green API works
-          </button>
-
-          {showSteps && (
-            <div
-              style={{
-                marginTop: 10,
-                background: "#F0FDF4",
-                border: "1px solid #BBF7D0",
-                borderRadius: 10,
-                padding: "14px 16px",
-              }}
-            >
-              <div
-                style={{
-                  fontWeight: 700,
-                  fontSize: "0.82rem",
-                  color: "#166534",
-                  marginBottom: 10,
-                  fontFamily: "DM Sans, sans-serif",
-                }}
-              >
-                📲 Green API — no opt-in required
-              </div>
-              <div
-                style={{
-                  fontSize: "0.78rem",
-                  color: "#166534",
-                  lineHeight: 1.7,
-                  fontFamily: "DM Sans, sans-serif",
-                }}
-              >
-                Messages are sent directly from the WhatsApp account linked to
-                the Green API instance. Just save your phone number above and
-                reminders will arrive on WhatsApp — no extra steps needed.
-              </div>
-            </div>
-          )}
-        </div>
-      )}
-        */}
     </div>
   );
 }

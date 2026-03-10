@@ -94,7 +94,7 @@ export function AuthPage() {
       <div
         style={{
           flex: 1,
-          display: "flex",
+          display: "none",
           background: "linear-gradient(160deg, #0F172A 0%, #0E7490 100%)",
           padding: 60,
           gap: 18,
@@ -115,7 +115,7 @@ export function AuthPage() {
               lineHeight: 1.2,
             }}
           >
-            VaccineTrack
+            VaccineTracker
           </div>
           <div
             style={{
@@ -196,11 +196,12 @@ export function AuthPage() {
           alignItems: "center",
           justifyContent: "center",
           padding: 24,
+          background: "#caf4ff",
         }}
       >
         <div
           style={{
-            background: "#fff",
+            background: "#e9fbff",
             borderRadius: 20,
             padding: "40px 36px",
             boxShadow: "0 20px 60px rgba(0,0,0,0.12)",
@@ -228,7 +229,7 @@ export function AuthPage() {
               }}
             >
               {mode === "login"
-                ? "Sign in to your VaccineTrack account"
+                ? "Sign in to your VaccineTracker account"
                 : "Track your child's immunisation journey"}
             </p>
           </div>
@@ -519,6 +520,5 @@ export function AuthPage() {
     </div>
   );
 }
-
 
 //ipconfig /flushdns

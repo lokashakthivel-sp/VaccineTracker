@@ -93,7 +93,7 @@ export function ParentDashboard() {
             display: "grid",
             gridTemplateColumns: "repeat(3, 1fr)",
             gap: 14,
-            background: "#F8FAFC",
+            background: "#f8feff",
             borderRadius: 14,
             padding: 16,
             marginBottom: 28,
@@ -146,9 +146,9 @@ export function ParentDashboard() {
           style={{
             textAlign: "center",
             padding: "60px 24px",
-            border: "2px dashed #E2E8F0",
+            border: "2px dashed #99ecff",
             borderRadius: 16,
-            background: "#FAFAFA",
+            background: "#f8feff",
           }}
         >
           <div style={{ fontSize: 48, marginBottom: 12 }}>👶</div>

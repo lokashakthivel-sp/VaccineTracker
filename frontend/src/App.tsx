@@ -25,7 +25,7 @@ function ProtectedRoute({
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#F8FAFC",
+          background: "#caf4ff",
           fontFamily: "DM Sans, sans-serif",
           flexDirection: "column",
           gap: 16,
@@ -36,13 +36,13 @@ function ProtectedRoute({
             width: 48,
             height: 48,
             borderRadius: "50%",
-            border: "3px solid #E2E8F0",
-            borderTopColor: "#06B6D4",
-            animation: "spin 0.8s linear infinite",
+            border: "3px solid #9ff1ff",
+            borderTopColor: "#0099b5",
+            animation: "spin 0.7s linear infinite",
           }}
         />
-        <div style={{ color: "#94A3B8", fontSize: "0.875rem" }}>
-          Loading VaccineTrack...
+        <div style={{ color: "#23373c", fontSize: "0.9rem" }}>
+          Loading VaccineTracker...
         </div>
         <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
       </div>
@@ -60,14 +60,14 @@ function AppRoutes() {
   const { user, profile, loading } = useAuth();
 
   if (loading)
-    return (
+      return (
       <div
         style={{
           minHeight: "100vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#F8FAFC",
+          background: "#caf4ff",
           fontFamily: "DM Sans, sans-serif",
           flexDirection: "column",
           gap: 16,
@@ -78,13 +78,13 @@ function AppRoutes() {
             width: 48,
             height: 48,
             borderRadius: "50%",
-            border: "3px solid #E2E8F0",
-            borderTopColor: "#06B6D4",
-            animation: "spin 0.8s linear infinite",
+            border: "3px solid #9ff1ff",
+            borderTopColor: "#0099b5",
+            animation: "spin 0.7s linear infinite",
           }}
         />
-        <div style={{ color: "#94A3B8", fontSize: "0.875rem" }}>
-          Loading VaccineTrack...
+        <div style={{ color: "#23373c", fontSize: "0.9rem" }}>
+          Loading VaccineTracker...
         </div>
         <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
       </div>
@@ -100,7 +100,7 @@ function AppRoutes() {
         path="/"
         element={
           <ProtectedRoute>
-            <div style={{ minHeight: "100vh", background: "#F8FAFC" }}>
+            <div style={{ minHeight: "100vh", background: "#dbf7fe" }}>
               <Navbar />
               {profile?.role === "doctor" ? (
                 <DoctorDashboard />

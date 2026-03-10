@@ -42,7 +42,7 @@ export function ChildCard({
     <div
       onClick={onClick}
       style={{
-        background: "#fff",
+        background: "#f8feff",
         borderRadius: 16,
         padding: "20px 22px",
         cursor: onClick ? "pointer" : "default",
@@ -53,13 +53,16 @@ export function ChildCard({
         overflow: "hidden",
       }}
       onMouseEnter={(e) => {
-        if (onClick)
+        if (onClick) {
           (e.currentTarget as HTMLDivElement).style.boxShadow =
             "0 6px 24px rgba(0,0,0,0.12)";
+          (e.currentTarget as HTMLDivElement).style.scale = "1.005";
+        }
       }}
       onMouseLeave={(e) => {
         (e.currentTarget as HTMLDivElement).style.boxShadow =
           "0 2px 12px rgba(0,0,0,0.06)";
+        (e.currentTarget as HTMLDivElement).style.scale = "1";
       }}
     >
       {/* Accent bar */}

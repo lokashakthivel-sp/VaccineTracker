@@ -266,7 +266,7 @@ export function FindDoctors() {
             fontSize: "0.9rem",
           }}
         >
-          Locate authorised doctors registered with VaccineTrack near you
+          Locate authorised doctors registered with VaccineTracker near you
         </p>
       </div>
 
