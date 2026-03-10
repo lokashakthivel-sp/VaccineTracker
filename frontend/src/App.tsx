@@ -60,7 +60,7 @@ function AppRoutes() {
   const { user, profile, loading } = useAuth();
 
   if (loading)
-      return (
+    return (
       <div
         style={{
           minHeight: "100vh",
@@ -114,14 +114,16 @@ function AppRoutes() {
           </ProtectedRoute>
         }
       />
-      {/* Find Doctors — parents only */}
+      
       <Route
         path="/find-doctors"
         element={
           <ProtectedRoute requiredRole="parent">
-            <Navbar />
-            <FindDoctors />
-            <VaccineChatbot />
+            <div style={{ minHeight: "100vh", background: "#dbf7fe" }}>
+              <Navbar />
+              <FindDoctors />
+              <VaccineChatbot />
+            </div>
           </ProtectedRoute>
         }
       />

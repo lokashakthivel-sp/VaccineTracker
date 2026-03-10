@@ -1,9 +1,3 @@
-/**
- * DoctorLocationSetup
- * Lets a doctor save their clinic name, address and GPS coordinates.
- * Shown at the bottom of the Doctor Dashboard.
- * Location is used by parents to find the nearest registered doctor.
- */
 import React, { useState, useEffect } from "react";
 import { supabase } from "../lib/supabase";
 import { useAuth } from "../context/AuthContext";
@@ -121,10 +115,10 @@ export function DoctorLocationSetup() {
   return (
     <div
       style={{
-        background: "#fff",
+        background: "#f8feff",
         borderRadius: 16,
         padding: "22px 24px",
-        border: "1.5px solid #E2E8F0",
+        border: "1.5px solid #99ecff",
         boxShadow: "0 2px 12px rgba(0,0,0,0.05)",
       }}
     >
@@ -304,7 +298,7 @@ export function DoctorLocationSetup() {
                 whiteSpace: "nowrap",
               }}
             >
-              {detecting ? "⏳ Detecting..." : "📍 Detect My Location"}
+              {detecting ? "Detecting..." : "Detect My Location"}
             </button>
           </div>
         </div>

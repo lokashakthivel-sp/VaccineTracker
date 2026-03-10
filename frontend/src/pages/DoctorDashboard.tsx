@@ -86,6 +86,9 @@ export function DoctorDashboard() {
           gridTemplateColumns: "repeat(3, 1fr)",
           gap: 14,
           marginBottom: 32,
+          background: "#f8feff",
+          borderRadius: 14,
+          padding: 16,
         }}
       >
         {[
@@ -117,7 +120,7 @@ export function DoctorDashboard() {
               background: card.bg,
               borderRadius: 12,
               padding: "16px",
-              border: `1px solid ${card.color}22`,
+              border: `1.5px solid ${card.color}22`,
             }}
           >
             <div style={{ fontSize: 22, marginBottom: 8 }}>{card.icon}</div>
@@ -148,10 +151,10 @@ export function DoctorDashboard() {
       {/* Search bar */}
       <div
         style={{
-          background: "#fff",
+          background: "#f8feff",
           borderRadius: 16,
           padding: "20px",
-          border: "1.5px solid #E2E8F0",
+          border: "1.5px solid #99ecff",
           boxShadow: "0 2px 12px rgba(0,0,0,0.05)",
           marginBottom: 24,
         }}
@@ -205,7 +208,7 @@ export function DoctorDashboard() {
               whiteSpace: "nowrap",
             }}
           >
-            {loading ? "Searching..." : "🔍 Search"}
+            {loading ? "Searching..." : "Search"}
           </button>
         </div>
         <div
@@ -230,6 +233,7 @@ export function DoctorDashboard() {
             background: "#FEF2F2",
             borderRadius: 10,
             marginBottom: 16,
+            border: "1px solid #FECACA",
           }}
         >
           {error}
@@ -291,10 +295,10 @@ export function DoctorDashboard() {
                     key={child.id}
                     onClick={() => setSelectedChild(child)}
                     style={{
-                      background: "#fff",
+                      background: "#f8feff",
                       borderRadius: 14,
                       padding: "16px 20px",
-                      border: "1.5px solid #E2E8F0",
+                      border: "1.5px solid #99ecff",
                       cursor: "pointer",
                       boxShadow: "0 1px 6px rgba(0,0,0,0.04)",
                       display: "flex",
@@ -309,7 +313,7 @@ export function DoctorDashboard() {
                     }}
                     onMouseLeave={(e) => {
                       const el = e.currentTarget as HTMLDivElement;
-                      el.style.borderColor = "#E2E8F0";
+                      el.style.borderColor = "#99ecff";
                       el.style.boxShadow = "0 1px 6px rgba(0,0,0,0.04)";
                     }}
                   >
@@ -391,7 +395,7 @@ export function DoctorDashboard() {
           style={{
             textAlign: "center",
             padding: "48px 24px",
-            border: "2px dashed #E2E8F0",
+            border: "2px dashed #99ecff",
             borderRadius: 16,
             marginBottom: 24,
           }}
@@ -424,7 +428,7 @@ export function DoctorDashboard() {
           style={{
             textAlign: "center",
             padding: "48px 24px",
-            border: "2px dashed #E2E8F0",
+            border: "2px dashed #99ecff",
             borderRadius: 16,
             marginBottom: 24,
             display: "flex",
@@ -450,6 +454,7 @@ export function DoctorDashboard() {
           <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
         </div>
       )}
+
       <DoctorLocationSetup />
     </div>
   );

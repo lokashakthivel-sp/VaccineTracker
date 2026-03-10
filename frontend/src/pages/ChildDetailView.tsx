@@ -73,7 +73,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
         <button
           onClick={onBack}
           style={{
-            background: "#F1F5F9",
+            background: "#ffffff",
             border: "none",
             borderRadius: 10,
             padding: "8px 16px",
@@ -137,7 +137,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
               }}
             >
               {pdfError.includes("Failed to fetch")
-                ? "⚠️ Python API not running — start it on :8000"
+                ? "⚠️ Python API not running"
                 : `⚠️ ${pdfError}`}
             </span>
           )}
@@ -147,12 +147,12 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
       {/* Child header */}
       <div
         style={{
-          background: "#fff",
+          background: "#f8feff",
           borderRadius: 16,
           padding: "24px",
           marginBottom: 24,
-          border: "1.5px solid #E2E8F0",
-          boxShadow: "0 2px 12px rgba(0,0,0,0.05)",
+          border: "1.5px solid #99ecff",
+          boxShadow: "0 5px 12px rgba(0,0,0,0.06)",
         }}
       >
         <div
@@ -209,7 +209,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
                   fontFamily: "DM Sans, sans-serif",
                 }}
               >
-                🎂 {formatAge(child.dob)} old
+                 {formatAge(child.dob)} old
               </span>
               <span
                 style={{
@@ -239,7 +239,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
                   fontStyle: "italic",
                 }}
               >
-                ID: {child.id.slice(0, 12)}
+                ID: {child.id.slice(0, 8)}
               </span>
             </div>
           </div>
@@ -375,6 +375,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
             color: "#DC2626",
             fontFamily: "DM Sans, sans-serif",
             padding: 20,
+            textAlign: "center",
           }}
         >
           {error}
@@ -386,7 +387,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
             padding: 40,
             color: "#94A3B8",
             fontFamily: "DM Sans, sans-serif",
-            background: "#F8FAFC",
+            background: "#f8feff",
             borderRadius: 12,
           }}
         >
@@ -407,7 +408,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
                 fontFamily: "DM Sans, sans-serif",
               }}
             >
-              💡 Click any vaccine to record or update vaccination details
+              Click any vaccine to record or update vaccination details
             </div>
           )}
           <VaccineTimeline

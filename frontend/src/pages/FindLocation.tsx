@@ -1,18 +1,7 @@
-/**
- * FindDoctors — Parents search for the nearest registered doctors.
- *
- * Uses:
- *  - Browser Geolocation API (free, built-in) for parent's location
- *  - Supabase RPC find_nearest_doctors (Haversine SQL) for distance sorting
- *  - Leaflet + OpenStreetMap tiles (free, no API key) for the map
- *
- * Leaflet is loaded via CDN in this component to avoid adding a build dep.
- */
 import React, { useState, useEffect, useRef } from "react";
 import { supabase } from "../lib/supabase";
 import type { DoctorProfile } from "../types";
 
-// ── Leaflet loaded from CDN ───────────────────────────────────
 declare global {
   interface Window {
     L: any;
@@ -36,7 +25,7 @@ function loadLeaflet(): Promise<void> {
   });
 }
 
-// ── Haversine (client-side fallback for distance label) ───────
+// ── Haversine (client-side fallback for distance label)
 function haversineKm(lat1: number, lng1: number, lat2: number, lng2: number) {
   const R = 6371;
   const dLat = ((lat2 - lat1) * Math.PI) / 180;
@@ -75,17 +64,14 @@ export function FindDoctors() {
       );
   }, []);
 
-  // Initialise map once Leaflet is loaded and the div is in DOM
   useEffect(() => {
     if (!mapReady || !mapRef.current || leafletMapRef.current) return;
     const L = window.L;
     const map = L.map(mapRef.current, { zoomControl: true }).setView(
-      [20.5937, 78.9629],
-      5,
+      [13, 80],
+      10,
     );
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution:
-        '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       maxZoom: 18,
     }).addTo(map);
     leafletMapRef.current = map;
@@ -111,7 +97,7 @@ export function FindDoctors() {
         className: "",
         html: `<div style="
           width:18px;height:18px;border-radius:50%;
-          background:#2563EB;border:3px solid #fff;
+          background:#3aeedc;border:3px solid #fff;
           box-shadow:0 2px 6px rgba(0,0,0,0.4);
         "></div>`,
         iconSize: [18, 18],
@@ -233,7 +219,6 @@ export function FindDoctors() {
     }
   };
 
-  // ── Styles ─────────────────────────────────────────────────
   const card: React.CSSProperties = {
     background: "#fff",
     borderRadius: 12,
@@ -273,10 +258,10 @@ export function FindDoctors() {
       {/* Search controls */}
       <div
         style={{
-          background: "#fff",
+          background: "#f8feff",
           borderRadius: 16,
           padding: "20px",
-          border: "1.5px solid #E2E8F0",
+          border: "1.5px solid #99ecff",
           marginBottom: 20,
           boxShadow: "0 2px 12px rgba(0,0,0,0.05)",
           display: "flex",
@@ -340,7 +325,7 @@ export function FindDoctors() {
             whiteSpace: "nowrap",
           }}
         >
-          {loading ? "⏳ Searching..." : "📍 Find Doctors Near Me"}
+          {loading ? "⏳ Searching..." : "Find Doctors Near Me"}
         </button>
       </div>
 
@@ -375,7 +360,7 @@ export function FindDoctors() {
           style={{
             borderRadius: 16,
             overflow: "hidden",
-            border: "1.5px solid #E2E8F0",
+            border: "1.5px solid #99ecff",
             boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
             height: 520,
             background: "#F8FAFC",
@@ -411,7 +396,7 @@ export function FindDoctors() {
                 alignItems: "center",
                 justifyContent: "center",
                 textAlign: "center",
-                border: "2px dashed #E2E8F0",
+                border: "2px dashed #99ecff",
                 borderRadius: 16,
                 padding: 24,
               }}
@@ -447,6 +432,8 @@ export function FindDoctors() {
                 justifyContent: "center",
                 color: "#94A3B8",
                 fontFamily: "DM Sans, sans-serif",
+                border: "2px dashed #99ecff",
+                borderRadius: 16,
               }}
             >
               <div style={{ textAlign: "center" }}>
@@ -463,7 +450,7 @@ export function FindDoctors() {
                 alignItems: "center",
                 justifyContent: "center",
                 textAlign: "center",
-                border: "2px dashed #E2E8F0",
+                border: "2px dashed #99ecff",
                 borderRadius: 16,
                 padding: 24,
               }}
@@ -531,6 +518,7 @@ export function FindDoctors() {
                       selected?.id === doc.id
                         ? "0 4px 16px rgba(8,145,178,0.15)"
                         : "0 1px 4px rgba(0,0,0,0.04)",
+                      background: "#f8feff"
                   }}
                   onMouseEnter={(e) => {
                     if (selected?.id !== doc.id)
@@ -585,7 +573,7 @@ export function FindDoctors() {
                             fontFamily: "DM Sans, sans-serif",
                           }}
                         >
-                          🏥 {doc.clinic_name}
+                          {doc.clinic_name}
                         </div>
                       )}
                       {doc.clinic_address && (
@@ -639,7 +627,7 @@ export function FindDoctors() {
         style={{ display: "flex", gap: 16, marginTop: 14, flexWrap: "wrap" }}
       >
         {[
-          { color: "#2563EB", label: "Your location" },
+          { color: "#3aeedc", label: "Your location" },
           { color: "#0891B2", label: "Registered doctor" },
         ].map((l) => (
           <div
@@ -666,13 +654,13 @@ export function FindDoctors() {
         ))}
         <div
           style={{
-            fontSize: "0.72rem",
+            fontSize: "0.6rem",
             color: "#94A3B8",
             fontFamily: "DM Sans, sans-serif",
             marginLeft: "auto",
           }}
         >
-          Map data © OpenStreetMap contributors
+          Map data © OpenStreetMap
         </div>
       </div>
     </div>

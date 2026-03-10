@@ -108,7 +108,7 @@ export function Navbar() {
               gap: 5,
             }}
           >
-            🗺️ {onFind ? "Back to Dashboard" : "Find Doctors"}
+             {onFind ? "Back to Dashboard" : "Find Doctors"}
           </button>
         )}
         <button
