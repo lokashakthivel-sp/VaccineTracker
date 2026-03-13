@@ -105,7 +105,7 @@ export function DoctorLocationSetup() {
     border: "1.5px solid #E2E8F0",
     borderRadius: 10,
     fontSize: "0.875rem",
-    fontFamily: "DM Sans, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     outline: "none",
     color: "#0F172A",
     boxSizing: "border-box",
@@ -150,7 +150,7 @@ export function DoctorLocationSetup() {
           <div
             style={{
               fontWeight: 700,
-              fontFamily: "DM Serif Display, serif",
+              fontFamily: "Poppins",
               fontSize: "1rem",
               color: "#0F172A",
             }}
@@ -161,7 +161,7 @@ export function DoctorLocationSetup() {
             style={{
               fontSize: "0.75rem",
               color: "#64748B",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
             }}
           >
             Parents can find you when searching for nearby doctors
@@ -176,7 +176,7 @@ export function DoctorLocationSetup() {
               fontWeight: 700,
               padding: "3px 10px",
               borderRadius: 999,
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               whiteSpace: "nowrap",
             }}
           >
@@ -193,7 +193,7 @@ export function DoctorLocationSetup() {
               fontSize: "0.78rem",
               fontWeight: 700,
               color: "#374151",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               display: "block",
               marginBottom: 6,
             }}
@@ -219,7 +219,7 @@ export function DoctorLocationSetup() {
               fontSize: "0.78rem",
               fontWeight: 700,
               color: "#374151",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               display: "block",
               marginBottom: 6,
             }}
@@ -263,7 +263,7 @@ export function DoctorLocationSetup() {
                   fontSize: "0.82rem",
                   fontWeight: 700,
                   color: "#374151",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 GPS Coordinates
@@ -272,7 +272,7 @@ export function DoctorLocationSetup() {
                 style={{
                   fontSize: "0.75rem",
                   color: "#64748B",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   marginTop: 2,
                 }}
               >
@@ -294,7 +294,7 @@ export function DoctorLocationSetup() {
                 color: "#fff",
                 fontSize: "0.8rem",
                 fontWeight: 700,
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
                 whiteSpace: "nowrap",
               }}
             >
@@ -312,7 +312,7 @@ export function DoctorLocationSetup() {
               padding: "10px 14px",
               fontSize: "0.82rem",
               color: "#DC2626",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               marginBottom: 14,
             }}
           >
@@ -329,7 +329,7 @@ export function DoctorLocationSetup() {
               padding: "10px 14px",
               fontSize: "0.82rem",
               color: "#16A34A",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               marginBottom: 14,
             }}
           >
@@ -352,7 +352,7 @@ export function DoctorLocationSetup() {
             color: "#fff",
             fontWeight: 700,
             fontSize: "0.9rem",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             cursor: saving || !form.lat ? "default" : "pointer",
           }}
         >

@@ -73,7 +73,7 @@ export function AuthPage() {
     border: "1.5px solid #E2E8F0",
     borderRadius: 10,
     fontSize: "0.9rem",
-    fontFamily: "DM Sans, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     outline: "none",
     boxSizing: "border-box",
     color: "#0F172A",
@@ -87,7 +87,7 @@ export function AuthPage() {
         display: "flex",
         background:
           "linear-gradient(135deg, #F0FDFA 0%, #E0F2FE 50%, #F0FDF4 100%)",
-        fontFamily: "DM Sans, sans-serif",
+        fontFamily: "Poppins, sans-serif",
       }}
     >
       {/* Left panel - branding */}
@@ -108,7 +108,7 @@ export function AuthPage() {
           <div style={{ fontSize: 40 }}>💉</div>
           <div
             style={{
-              fontFamily: "DM Serif Display, serif",
+              fontFamily: "Poppins",
               fontSize: "2.2rem",
               color: "#fff",
               marginTop: 16,
@@ -196,12 +196,12 @@ export function AuthPage() {
           alignItems: "center",
           justifyContent: "center",
           padding: 24,
-          background: "#caf4ff",
+          background: "#f4fdff",
         }}
       >
         <div
           style={{
-            background: "#e9fbff",
+            background: "#eefdff",
             borderRadius: 20,
             padding: "40px 36px",
             boxShadow: "0 20px 60px rgba(0,0,0,0.12)",
@@ -214,7 +214,7 @@ export function AuthPage() {
             <h1
               style={{
                 margin: 0,
-                fontFamily: "DM Serif Display, serif",
+                fontFamily: "Poppins",
                 fontSize: "1.6rem",
                 color: "#0F172A",
               }}
@@ -426,7 +426,7 @@ export function AuthPage() {
                         borderRadius: 12,
                         cursor: "pointer",
                         background: role === r ? "#F0FDFA" : "#FAFAFA",
-                        fontFamily: "DM Sans, sans-serif",
+                        fontFamily: "Poppins, sans-serif",
                         fontWeight: 700,
                         color: role === r ? "#0E7490" : "#64748B",
                         fontSize: "0.9rem",
@@ -471,7 +471,7 @@ export function AuthPage() {
                 fontSize: "0.95rem",
                 fontWeight: 700,
                 color: "#fff",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
                 letterSpacing: "0.02em",
                 boxShadow: loading ? "none" : "0 4px 16px rgba(6,182,212,0.4)",
                 transition: "all 0.2s",
@@ -509,7 +509,7 @@ export function AuthPage() {
                 fontWeight: 700,
                 cursor: "pointer",
                 fontSize: "0.83rem",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               {mode === "login" ? "Sign up" : "Sign in"}

@@ -14,7 +14,7 @@ const inputStyle: React.CSSProperties = {
   border: "1.5px solid #E2E8F0",
   borderRadius: 10,
   fontSize: "0.875rem",
-  fontFamily: "DM Sans, sans-serif",
+  fontFamily: "Poppins, sans-serif",
   outline: "none",
   boxSizing: "border-box",
   color: "#0F172A",
@@ -24,7 +24,7 @@ const labelStyle: React.CSSProperties = {
   fontSize: "0.78rem",
   fontWeight: 600,
   color: "#475569",
-  fontFamily: "DM Sans, sans-serif",
+  fontFamily: "Poppins, sans-serif",
   marginBottom: 5,
   display: "block",
 };
@@ -72,7 +72,7 @@ export function VaccinationForm({ entry, onSubmit, onCancel }: Props) {
           style={{
             fontWeight: 700,
             fontSize: "0.95rem",
-            fontFamily: "DM Serif Display, serif",
+            fontFamily: "Poppins",
             color: "#0F172A",
           }}
         >
@@ -83,7 +83,7 @@ export function VaccinationForm({ entry, onSubmit, onCancel }: Props) {
             fontSize: "0.75rem",
             color: "#64748B",
             marginTop: 2,
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           {entry.vaccine.full_name}
@@ -94,7 +94,7 @@ export function VaccinationForm({ entry, onSubmit, onCancel }: Props) {
               fontSize: "0.7rem",
               color: "#94A3B8",
               marginTop: 4,
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
             }}
           >
             Prevents: {entry.vaccine.diseases_prevented.join(", ")}
@@ -168,7 +168,7 @@ export function VaccinationForm({ entry, onSubmit, onCancel }: Props) {
             padding: "10px 14px",
             fontSize: "0.8rem",
             color: "#DC2626",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           {error}
@@ -189,7 +189,7 @@ export function VaccinationForm({ entry, onSubmit, onCancel }: Props) {
             fontSize: "0.875rem",
             fontWeight: 600,
             color: "#475569",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           Cancel
@@ -209,7 +209,7 @@ export function VaccinationForm({ entry, onSubmit, onCancel }: Props) {
             fontSize: "0.875rem",
             fontWeight: 700,
             color: "#fff",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           {loading

@@ -131,7 +131,7 @@ export function FindDoctors() {
       });
 
       const popup = `
-        <div style="font-family:'DM Sans',sans-serif;min-width:180px;">
+        <div style="font-family:'Poppins',sans-serif;min-width:180px;">
           <div style="font-weight:700;font-size:14px;color:#0F172A;margin-bottom:4px;">
             Dr. ${doc.full_name}
           </div>
@@ -236,7 +236,7 @@ export function FindDoctors() {
         <h1
           style={{
             margin: 0,
-            fontFamily: "DM Serif Display, serif",
+            fontFamily: "Poppins",
             fontSize: "2rem",
             color: "#0F172A",
           }}
@@ -247,7 +247,7 @@ export function FindDoctors() {
           style={{
             margin: "6px 0 0",
             color: "#64748B",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             fontSize: "0.9rem",
           }}
         >
@@ -276,7 +276,7 @@ export function FindDoctors() {
               fontSize: "0.78rem",
               fontWeight: 700,
               color: "#374151",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               display: "block",
               marginBottom: 6,
             }}
@@ -292,7 +292,7 @@ export function FindDoctors() {
               border: "1.5px solid #E2E8F0",
               borderRadius: 10,
               fontSize: "0.875rem",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               outline: "none",
               color: "#0F172A",
               background: "#fff",
@@ -320,7 +320,7 @@ export function FindDoctors() {
             color: "#fff",
             fontWeight: 700,
             fontSize: "0.9rem",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             cursor: loading ? "default" : "pointer",
             whiteSpace: "nowrap",
           }}
@@ -338,7 +338,7 @@ export function FindDoctors() {
             padding: "12px 16px",
             fontSize: "0.875rem",
             color: "#DC2626",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             marginBottom: 16,
           }}
         >
@@ -376,7 +376,7 @@ export function FindDoctors() {
                 position: "absolute",
                 textAlign: "center",
                 color: "#94A3B8",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               <div style={{ fontSize: 32, marginBottom: 8 }}>🗺️</div>
@@ -404,7 +404,7 @@ export function FindDoctors() {
               <div style={{ fontSize: 42, marginBottom: 12 }}>🔍</div>
               <div
                 style={{
-                  fontFamily: "DM Serif Display, serif",
+                  fontFamily: "Poppins",
                   fontSize: "1rem",
                   color: "#0F172A",
                   marginBottom: 6,
@@ -415,7 +415,7 @@ export function FindDoctors() {
               <div
                 style={{
                   color: "#94A3B8",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   fontSize: "0.8rem",
                 }}
               >
@@ -431,7 +431,7 @@ export function FindDoctors() {
                 alignItems: "center",
                 justifyContent: "center",
                 color: "#94A3B8",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
                 border: "2px dashed #99ecff",
                 borderRadius: 16,
               }}
@@ -458,7 +458,7 @@ export function FindDoctors() {
               <div style={{ fontSize: 42, marginBottom: 12 }}>😔</div>
               <div
                 style={{
-                  fontFamily: "DM Serif Display, serif",
+                  fontFamily: "Poppins",
                   fontSize: "1rem",
                   color: "#0F172A",
                   marginBottom: 6,
@@ -469,7 +469,7 @@ export function FindDoctors() {
               <div
                 style={{
                   color: "#94A3B8",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   fontSize: "0.8rem",
                 }}
               >
@@ -482,7 +482,7 @@ export function FindDoctors() {
                 style={{
                   fontSize: "0.78rem",
                   color: "#64748B",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   marginBottom: 10,
                   fontWeight: 600,
                 }}
@@ -518,7 +518,7 @@ export function FindDoctors() {
                       selected?.id === doc.id
                         ? "0 4px 16px rgba(8,145,178,0.15)"
                         : "0 1px 4px rgba(0,0,0,0.04)",
-                      background: "#f8feff"
+                    background: "#f8feff",
                   }}
                   onMouseEnter={(e) => {
                     if (selected?.id !== doc.id)
@@ -557,7 +557,7 @@ export function FindDoctors() {
                       <div
                         style={{
                           fontWeight: 700,
-                          fontFamily: "DM Sans, sans-serif",
+                          fontFamily: "Poppins, sans-serif",
                           fontSize: "0.9rem",
                           color: "#0F172A",
                         }}
@@ -570,7 +570,7 @@ export function FindDoctors() {
                             fontSize: "0.78rem",
                             color: "#0891B2",
                             marginTop: 2,
-                            fontFamily: "DM Sans, sans-serif",
+                            fontFamily: "Poppins, sans-serif",
                           }}
                         >
                           {doc.clinic_name}
@@ -582,7 +582,7 @@ export function FindDoctors() {
                             fontSize: "0.72rem",
                             color: "#64748B",
                             marginTop: 2,
-                            fontFamily: "DM Sans, sans-serif",
+                            fontFamily: "Poppins, sans-serif",
                           }}
                         >
                           📍 {doc.clinic_address}
@@ -608,7 +608,7 @@ export function FindDoctors() {
                           fontWeight: 700,
                           padding: "2px 8px",
                           borderRadius: 999,
-                          fontFamily: "DM Sans, sans-serif",
+                          fontFamily: "Poppins, sans-serif",
                         }}
                       >
                         {doc.distance_km?.toFixed(1)} km away
@@ -636,7 +636,7 @@ export function FindDoctors() {
               display: "flex",
               alignItems: "center",
               gap: 6,
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               fontSize: "0.78rem",
               color: "#64748B",
             }}
@@ -656,7 +656,7 @@ export function FindDoctors() {
           style={{
             fontSize: "0.6rem",
             color: "#94A3B8",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             marginLeft: "auto",
           }}
         >

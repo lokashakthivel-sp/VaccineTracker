@@ -67,7 +67,7 @@ export function VaccineStatusBadge({
         letterSpacing: "0.03em",
         backgroundColor: cfg.bg,
         color: cfg.color,
-        fontFamily: "DM Sans, sans-serif",
+        fontFamily: "Poppins, sans-serif",
         whiteSpace: "nowrap",
       }}
     >

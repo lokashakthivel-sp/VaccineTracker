@@ -46,7 +46,7 @@ export function ParentDashboard() {
           <h1
             style={{
               margin: 0,
-              fontFamily: "DM Serif Display, serif",
+              fontFamily: "Poppins",
               fontSize: "2rem",
               color: "#0F172A",
             }}
@@ -57,7 +57,7 @@ export function ParentDashboard() {
             style={{
               margin: "6px 0 0",
               color: "#64748B",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               fontSize: "0.9rem",
             }}
           >
@@ -75,7 +75,7 @@ export function ParentDashboard() {
             fontSize: "0.875rem",
             fontWeight: 700,
             color: "#fff",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             boxShadow: "0 4px 16px rgba(6,182,212,0.3)",
             display: "flex",
             alignItems: "center",
@@ -97,6 +97,7 @@ export function ParentDashboard() {
             borderRadius: 14,
             padding: 16,
             marginBottom: 28,
+            border: "1.5px solid #99ecff",
           }}
         >
           <StatCard
@@ -135,7 +136,7 @@ export function ParentDashboard() {
             textAlign: "center",
             padding: 60,
             color: "#94A3B8",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           <div style={{ fontSize: 32, marginBottom: 12 }}>⏳</div>Loading
@@ -154,7 +155,7 @@ export function ParentDashboard() {
           <div style={{ fontSize: 48, marginBottom: 12 }}>👶</div>
           <div
             style={{
-              fontFamily: "DM Serif Display, serif",
+              fontFamily: "Poppins",
               fontSize: "1.3rem",
               color: "#0F172A",
               marginBottom: 8,
@@ -166,7 +167,7 @@ export function ParentDashboard() {
             style={{
               color: "#64748B",
               fontSize: "0.875rem",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               marginBottom: 20,
             }}
           >
@@ -184,7 +185,7 @@ export function ParentDashboard() {
               fontSize: "0.875rem",
               fontWeight: 700,
               color: "#fff",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
             }}
           >
             + Add First Child
@@ -219,7 +220,7 @@ export function ParentDashboard() {
         <h2
           style={{
             margin: "0 0 14px",
-            fontFamily: "DM Serif Display, serif",
+            fontFamily: "Poppins",
             fontSize: "1.2rem",
             color: "#0F172A",
           }}
@@ -288,7 +289,7 @@ export function ParentDashboard() {
                 style={{
                   fontWeight: 700,
                   color: "#DC2626",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   fontSize: "0.9rem",
                 }}
               >
@@ -299,7 +300,7 @@ export function ParentDashboard() {
                   color: "#7F1D1D",
                   fontSize: "0.82rem",
                   marginTop: 4,
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 All vaccination records for{" "}
@@ -313,7 +314,7 @@ export function ParentDashboard() {
                   color: "#DC2626",
                   fontSize: "0.82rem",
                   marginBottom: 12,
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 {delError}
@@ -330,7 +331,7 @@ export function ParentDashboard() {
                   borderRadius: 10,
                   cursor: "pointer",
                   fontWeight: 600,
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   color: "#475569",
                 }}
               >
@@ -353,7 +354,7 @@ export function ParentDashboard() {
                   borderRadius: 10,
                   cursor: deleting ? "default" : "pointer",
                   fontWeight: 700,
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   color: "#fff",
                   opacity: deleting ? 0.7 : 1,
                 }}
@@ -387,10 +388,16 @@ function StatCard({
         borderRadius: 10,
         padding: "12px 8px",
       }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.background = color + "21";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.background = bg;
+      }}
     >
       <div
         style={{
-          fontFamily: "DM Serif Display, serif",
+          fontFamily: "Poppins",
           fontSize: "1.8rem",
           color,
           fontWeight: 700,
@@ -403,7 +410,7 @@ function StatCard({
           fontSize: "0.72rem",
           color,
           opacity: 0.8,
-          fontFamily: "DM Sans, sans-serif",
+          fontFamily: "Poppins, sans-serif",
           fontWeight: 600,
         }}
       >

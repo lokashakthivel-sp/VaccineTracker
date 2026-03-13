@@ -54,7 +54,7 @@ export function WhatsAppSettings() {
     border: "1.5px solid #E2E8F0",
     borderRadius: 10,
     fontSize: "0.9rem",
-    fontFamily: "DM Sans, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     outline: "none",
     color: "#0F172A",
     transition: "border-color 0.15s",
@@ -100,7 +100,7 @@ export function WhatsAppSettings() {
           <div
             style={{
               fontWeight: 700,
-              fontFamily: "DM Serif Display, serif",
+              fontFamily: "Poppins",
               fontSize: "1rem",
               color: "#0F172A",
             }}
@@ -111,7 +111,7 @@ export function WhatsAppSettings() {
             style={{
               fontSize: "0.75rem",
               color: "#64748B",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
             }}
           >
             Receive vaccine alerts directly on WhatsApp
@@ -126,7 +126,7 @@ export function WhatsAppSettings() {
               fontWeight: 700,
               padding: "3px 10px",
               borderRadius: 999,
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               whiteSpace: "nowrap",
             }}
           >
@@ -145,7 +145,7 @@ export function WhatsAppSettings() {
             padding: "10px 14px",
             fontSize: "0.78rem",
             color: "#92400E",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             marginBottom: 14,
           }}
         >
@@ -179,7 +179,7 @@ export function WhatsAppSettings() {
             color: "#fff",
             fontWeight: 700,
             fontSize: "0.85rem",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             cursor: saving ? "default" : "pointer",
             whiteSpace: "nowrap",
             transition: "background 0.15s",
@@ -193,7 +193,7 @@ export function WhatsAppSettings() {
         style={{
           fontSize: "0.72rem",
           color: "#94A3B8",
-          fontFamily: "DM Sans, sans-serif",
+          fontFamily: "Poppins, sans-serif",
           marginBottom: 12,
         }}
       >
@@ -210,7 +210,7 @@ export function WhatsAppSettings() {
             padding: "10px 14px",
             fontSize: "0.82rem",
             color: "#16A34A",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             marginBottom: 12,
           }}
         >
@@ -228,7 +228,7 @@ export function WhatsAppSettings() {
             padding: "10px 14px",
             fontSize: "0.82rem",
             color: "#DC2626",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             marginBottom: 12,
           }}
         >
@@ -245,7 +245,7 @@ export function WhatsAppSettings() {
             padding: "10px 14px",
             fontSize: "0.78rem",
             color: "#92400E",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           ⚠️ Green API is not configured.

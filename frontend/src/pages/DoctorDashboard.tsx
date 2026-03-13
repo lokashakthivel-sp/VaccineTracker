@@ -60,7 +60,7 @@ export function DoctorDashboard() {
         <h1
           style={{
             margin: 0,
-            fontFamily: "DM Serif Display, serif",
+            fontFamily: "Poppins",
             fontSize: "2rem",
             color: "#0F172A",
           }}
@@ -71,7 +71,7 @@ export function DoctorDashboard() {
           style={{
             margin: "6px 0 0",
             color: "#64748B",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             fontSize: "0.9rem",
           }}
         >
@@ -89,6 +89,7 @@ export function DoctorDashboard() {
           background: "#f8feff",
           borderRadius: 14,
           padding: 16,
+          border: "1.5px solid #99ecff",
         }}
       >
         {[
@@ -122,12 +123,20 @@ export function DoctorDashboard() {
               padding: "16px",
               border: `1.5px solid ${card.color}22`,
             }}
+            onMouseEnter={(e) => {
+              const el = e.currentTarget as HTMLDivElement;
+              el.style.background = card.color + "21";
+            }}
+            onMouseLeave={(e) => {
+              const el = e.currentTarget as HTMLDivElement;
+              el.style.background = card.bg;
+            }}
           >
             <div style={{ fontSize: 22, marginBottom: 8 }}>{card.icon}</div>
             <div
               style={{
                 fontWeight: 700,
-                fontFamily: "DM Serif Display, serif",
+                fontFamily: "Poppins",
                 color: card.color,
                 fontSize: "0.95rem",
               }}
@@ -138,7 +147,7 @@ export function DoctorDashboard() {
               style={{
                 fontSize: "0.75rem",
                 color: "#64748B",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
                 marginTop: 4,
               }}
             >
@@ -164,7 +173,7 @@ export function DoctorDashboard() {
             fontSize: "0.82rem",
             fontWeight: 700,
             color: "#374151",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             display: "block",
             marginBottom: 10,
           }}
@@ -183,7 +192,7 @@ export function DoctorDashboard() {
               border: "1.5px solid #E2E8F0",
               borderRadius: 12,
               fontSize: "0.9rem",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               outline: "none",
               color: "#0F172A",
             }}
@@ -204,7 +213,7 @@ export function DoctorDashboard() {
               fontSize: "0.875rem",
               fontWeight: 700,
               color: "#fff",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               whiteSpace: "nowrap",
             }}
           >
@@ -216,7 +225,7 @@ export function DoctorDashboard() {
             fontSize: "0.72rem",
             color: "#94A3B8",
             marginTop: 8,
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           Search by full name (partial match) or exact patient ID
@@ -228,7 +237,7 @@ export function DoctorDashboard() {
         <div
           style={{
             color: "#DC2626",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             padding: "12px 16px",
             background: "#FEF2F2",
             borderRadius: 10,
@@ -256,7 +265,7 @@ export function DoctorDashboard() {
               <div style={{ fontSize: 40, marginBottom: 10 }}>🔍</div>
               <div
                 style={{
-                  fontFamily: "DM Serif Display, serif",
+                  fontFamily: "Poppins",
                   fontSize: "1.1rem",
                   color: "#0F172A",
                   marginBottom: 6,
@@ -267,7 +276,7 @@ export function DoctorDashboard() {
               <div
                 style={{
                   color: "#64748B",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   fontSize: "0.85rem",
                 }}
               >
@@ -280,7 +289,7 @@ export function DoctorDashboard() {
                 style={{
                   fontSize: "0.82rem",
                   color: "#64748B",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   marginBottom: 12,
                   fontWeight: 600,
                 }}
@@ -341,7 +350,7 @@ export function DoctorDashboard() {
                       <div
                         style={{
                           fontWeight: 700,
-                          fontFamily: "DM Serif Display, serif",
+                          fontFamily: "Poppins",
                           color: "#0F172A",
                           fontSize: "1rem",
                         }}
@@ -352,7 +361,7 @@ export function DoctorDashboard() {
                         style={{
                           fontSize: "0.78rem",
                           color: "#64748B",
-                          fontFamily: "DM Sans, sans-serif",
+                          fontFamily: "Poppins, sans-serif",
                           marginTop: 2,
                         }}
                       >
@@ -365,7 +374,7 @@ export function DoctorDashboard() {
                         style={{
                           fontSize: "0.7rem",
                           color: "#94A3B8",
-                          fontFamily: "DM Sans, sans-serif",
+                          fontFamily: "Poppins, sans-serif",
                           marginTop: 2,
                           fontStyle: "italic",
                         }}
@@ -403,7 +412,7 @@ export function DoctorDashboard() {
           <div style={{ fontSize: 48, marginBottom: 10 }}>👩‍⚕️</div>
           <div
             style={{
-              fontFamily: "DM Serif Display, serif",
+              fontFamily: "Poppins",
               fontSize: "1.2rem",
               color: "#0F172A",
               marginBottom: 6,
@@ -414,7 +423,7 @@ export function DoctorDashboard() {
           <div
             style={{
               color: "#94A3B8",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               fontSize: "0.85rem",
             }}
           >

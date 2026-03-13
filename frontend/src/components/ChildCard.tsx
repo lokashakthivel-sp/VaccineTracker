@@ -109,7 +109,7 @@ export function ChildCard({
                 fontWeight: 700,
                 fontSize: "1rem",
                 color: "#0F172A",
-                fontFamily: "DM Serif Display, serif",
+                fontFamily: "Poppins",
               }}
             >
               {child.full_name}
@@ -138,7 +138,7 @@ export function ChildCard({
                   cursor: "pointer",
                   fontSize: "0.8rem",
                   color: "#475569",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   fontWeight: 600,
                 }}
               >
@@ -156,7 +156,7 @@ export function ChildCard({
                   cursor: "pointer",
                   fontSize: "0.8rem",
                   color: "#DC2626",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   fontWeight: 600,
                 }}
               >
@@ -236,7 +236,7 @@ function Chip({
         fontWeight: 600,
         padding: "3px 9px",
         borderRadius: 999,
-        fontFamily: "DM Sans, sans-serif",
+        fontFamily: "Poppins, sans-serif",
       }}
     >
       {label}
@@ -272,7 +272,7 @@ function StatPill({
           fontWeight: 700,
           fontSize: "1rem",
           color,
-          fontFamily: "DM Serif Display, serif",
+          fontFamily: "Poppins",
         }}
       >
         {count}
@@ -282,7 +282,7 @@ function StatPill({
           fontSize: "0.67rem",
           color,
           opacity: 0.8,
-          fontFamily: "DM Sans, sans-serif",
+          fontFamily: "Poppins, sans-serif",
           fontWeight: 500,
         }}
       >

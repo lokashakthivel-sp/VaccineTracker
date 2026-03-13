@@ -7,6 +7,7 @@ import { DoctorDashboard } from "./pages/DoctorDashboard";
 import { Navbar } from "./components/Navbar";
 import { FindDoctors } from "./pages/FindLocation";
 import { VaccineChatbot } from "./components/VaccineChatbot";
+import { DNA } from "react-loader-spinner";
 
 function ProtectedRoute({
   children,
@@ -25,21 +26,19 @@ function ProtectedRoute({
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#caf4ff",
-          fontFamily: "DM Sans, sans-serif",
+          background: "#fff",
+          fontFamily: "Poppins, sans-serif",
           flexDirection: "column",
           gap: 16,
         }}
       >
-        <div
-          style={{
-            width: 48,
-            height: 48,
-            borderRadius: "50%",
-            border: "3px solid #9ff1ff",
-            borderTopColor: "#0099b5",
-            animation: "spin 0.7s linear infinite",
-          }}
+        <DNA
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="dna-loading"
+          wrapperStyle={{}}
+          wrapperClass="dna-wrapper"
         />
         <div style={{ color: "#23373c", fontSize: "0.9rem" }}>
           Loading VaccineTracker...
@@ -67,21 +66,19 @@ function AppRoutes() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#caf4ff",
-          fontFamily: "DM Sans, sans-serif",
+          background: "#fff",
+          fontFamily: "Poppins, sans-serif",
           flexDirection: "column",
           gap: 16,
         }}
       >
-        <div
-          style={{
-            width: 48,
-            height: 48,
-            borderRadius: "50%",
-            border: "3px solid #9ff1ff",
-            borderTopColor: "#0099b5",
-            animation: "spin 0.7s linear infinite",
-          }}
+        <DNA
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="dna-loading"
+          wrapperStyle={{}}
+          wrapperClass="dna-wrapper"
         />
         <div style={{ color: "#23373c", fontSize: "0.9rem" }}>
           Loading VaccineTracker...
@@ -94,13 +91,13 @@ function AppRoutes() {
     <Routes>
       <Route
         path="/auth"
-        element={user ? <Navigate to="/" replace /> : <AuthPage />}
+        element={user && profile ? <Navigate to="/" replace /> : <AuthPage />}
       />
       <Route
         path="/"
         element={
           <ProtectedRoute>
-            <div style={{ minHeight: "100vh", background: "#dbf7fe" }}>
+            <div style={{ minHeight: "100vh", background: "#fff" }}>
               <Navbar />
               {profile?.role === "doctor" ? (
                 <DoctorDashboard />
@@ -114,12 +111,12 @@ function AppRoutes() {
           </ProtectedRoute>
         }
       />
-      
+
       <Route
         path="/find-doctors"
         element={
           <ProtectedRoute requiredRole="parent">
-            <div style={{ minHeight: "100vh", background: "#dbf7fe" }}>
+            <div style={{ minHeight: "100vh", background: "#fff" }}>
               <Navbar />
               <FindDoctors />
               <VaccineChatbot />

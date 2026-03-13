@@ -234,7 +234,7 @@ export function VaccineChatbot() {
                 style={{
                   color: "#fff",
                   fontWeight: 700,
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   fontSize: "0.95rem",
                 }}
               >
@@ -244,7 +244,7 @@ export function VaccineChatbot() {
                 style={{
                   color: "#94A3B8",
                   fontSize: "0.7rem",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 India NIS vaccine assistant • Powered by Gemini
@@ -262,7 +262,7 @@ export function VaccineChatbot() {
                   cursor: "pointer",
                   color: "#94A3B8",
                   fontSize: "0.7rem",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 Clear
@@ -287,7 +287,7 @@ export function VaccineChatbot() {
                   <div
                     style={{
                       fontWeight: 700,
-                      fontFamily: "DM Sans, sans-serif",
+                      fontFamily: "Poppins, sans-serif",
                       fontSize: "0.9rem",
                       color: "#0F172A",
                       marginBottom: 4,
@@ -303,7 +303,7 @@ export function VaccineChatbot() {
                     style={{
                       fontSize: "0.8rem",
                       color: "#475569",
-                      fontFamily: "DM Sans, sans-serif",
+                      fontFamily: "Poppins, sans-serif",
                       lineHeight: 1.5,
                     }}
                   >
@@ -317,7 +317,7 @@ export function VaccineChatbot() {
                   style={{
                     fontSize: "0.72rem",
                     color: "#94A3B8",
-                    fontFamily: "DM Sans, sans-serif",
+                    fontFamily: "Poppins, sans-serif",
                     marginBottom: 8,
                     fontWeight: 600,
                   }}
@@ -346,7 +346,7 @@ export function VaccineChatbot() {
                         textAlign: "left",
                         fontSize: "0.78rem",
                         color: "#374151",
-                        fontFamily: "DM Sans, sans-serif",
+                        fontFamily: "Poppins, sans-serif",
                         transition: "all 0.15s",
                         lineHeight: 1.4,
                       }}
@@ -403,7 +403,7 @@ export function VaccineChatbot() {
                         : "18px 18px 18px 4px",
                     padding: "10px 14px",
                     fontSize: "0.82rem",
-                    fontFamily: "DM Sans, sans-serif",
+                    fontFamily: "Poppins, sans-serif",
                     lineHeight: 1.55,
                     border:
                       msg.role === "assistant" ? "1px solid #E2E8F0" : "none",
@@ -479,7 +479,7 @@ export function VaccineChatbot() {
                   padding: "10px 12px",
                   fontSize: "0.78rem",
                   color: "#DC2626",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   marginBottom: 10,
                 }}
               >
@@ -496,7 +496,7 @@ export function VaccineChatbot() {
               padding: "6px 14px",
               fontSize: "0.65rem",
               color: "#CBD5E1",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               textAlign: "center",
               flexShrink: 0,
             }}
@@ -529,7 +529,7 @@ export function VaccineChatbot() {
                 border: "1.5px solid #E2E8F0",
                 borderRadius: 12,
                 fontSize: "0.85rem",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
                 color: "#0F172A",
                 resize: "none",
                 lineHeight: 1.4,

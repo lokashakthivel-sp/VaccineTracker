@@ -44,7 +44,7 @@ export function Navbar() {
               fontWeight: 800,
               fontSize: "1.05rem",
               color: "#0F172A",
-              fontFamily: "DM Serif Display, serif",
+              fontFamily: "Poppins",
               lineHeight: 1.1,
             }}
           >
@@ -54,7 +54,7 @@ export function Navbar() {
             style={{
               fontSize: "0.65rem",
               color: "#64748B",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               fontWeight: 500,
             }}
           >
@@ -66,13 +66,13 @@ export function Navbar() {
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
         <div
           style={{
-            background:"#ebfbff",
+            background: "#ebfbff",
             color: profile?.role === "doctor" ? "#1D4ED8" : "#15803D",
             fontSize: "0.72rem",
             fontWeight: 700,
             padding: "3px 10px",
             borderRadius: 999,
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             letterSpacing: "0.05em",
             textTransform: "uppercase",
           }}
@@ -83,7 +83,7 @@ export function Navbar() {
           style={{
             fontSize: "0.85rem",
             color: "#374151",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             fontWeight: 500,
           }}
         >
@@ -93,14 +93,15 @@ export function Navbar() {
           <button
             onClick={() => navigate(onFind ? "/" : "/find-doctors")}
             style={{
-              background: "linear-gradient(135deg, rgb(6, 182, 212), rgb(8, 145, 178))",
+              background:
+                "linear-gradient(135deg, rgb(6, 182, 212), rgb(8, 145, 178))",
               border: "none",
               borderRadius: 8,
               padding: "7px 14px",
               cursor: "pointer",
               fontSize: "0.8rem",
               color: "#fff",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               fontWeight: 600,
               transition: "all 0.15s",
               display: "flex",
@@ -108,7 +109,7 @@ export function Navbar() {
               gap: 5,
             }}
           >
-             {onFind ? "Back to Dashboard" : "Find Doctors"}
+            {onFind ? "Back to Dashboard" : "Find Doctors"}
           </button>
         )}
         <button
@@ -121,7 +122,7 @@ export function Navbar() {
             cursor: "pointer",
             fontSize: "0.8rem",
             color: "#475569",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             fontWeight: 600,
             transition: "background 0.15s",
           }}

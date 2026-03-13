@@ -27,7 +27,7 @@ const inputStyle: React.CSSProperties = {
   border: "1.5px solid #E2E8F0",
   borderRadius: 10,
   fontSize: "0.875rem",
-  fontFamily: "DM Sans, sans-serif",
+  fontFamily: "Poppins, sans-serif",
   outline: "none",
   boxSizing: "border-box",
   color: "#0F172A",
@@ -38,7 +38,7 @@ const labelStyle: React.CSSProperties = {
   fontSize: "0.78rem",
   fontWeight: 600,
   color: "#475569",
-  fontFamily: "DM Sans, sans-serif",
+  fontFamily: "Poppins, sans-serif",
   marginBottom: 5,
   display: "block",
 };
@@ -160,7 +160,7 @@ export function ChildForm({
             padding: "10px 14px",
             fontSize: "0.8rem",
             color: "#DC2626",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           {error}
@@ -181,7 +181,7 @@ export function ChildForm({
             fontSize: "0.875rem",
             fontWeight: 600,
             color: "#475569",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           Cancel
@@ -201,7 +201,7 @@ export function ChildForm({
             fontSize: "0.875rem",
             fontWeight: 700,
             color: "#fff",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           {loading ? "Saving..." : submitLabel}

@@ -39,7 +39,7 @@ Rules:
 - Keep responses concise — use bullet points for lists
 - Never diagnose illness — only provide information about vaccines
 - If unsure, say so and suggest consulting a paediatrician
-- Respond in the same language the parent uses (English or Hindi)"""
+- Respond in the same language the parent uses """
 
 
 # ── Request / response schemas ────────────────────────────────

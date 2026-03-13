@@ -65,7 +65,7 @@ export function Modal({
           <h3
             style={{
               margin: 0,
-              fontFamily: "DM Serif Display, serif",
+              fontFamily: "Poppins",
               fontSize: "1.15rem",
               color: "#0F172A",
             }}

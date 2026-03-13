@@ -80,7 +80,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
             cursor: "pointer",
             fontSize: "0.85rem",
             color: "#475569",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             fontWeight: 600,
             display: "flex",
             alignItems: "center",
@@ -112,7 +112,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
               cursor: pdfLoading ? "default" : "pointer",
               fontSize: "0.82rem",
               color: "#fff",
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               fontWeight: 700,
               display: "flex",
               alignItems: "center",
@@ -131,7 +131,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
               style={{
                 fontSize: "0.7rem",
                 color: "#DC2626",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
                 maxWidth: 240,
                 textAlign: "right",
               }}
@@ -186,7 +186,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
             <h2
               style={{
                 margin: 0,
-                fontFamily: "DM Serif Display, serif",
+                fontFamily: "Poppins",
                 fontSize: "1.5rem",
                 color: "#0F172A",
               }}
@@ -206,16 +206,16 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
                 style={{
                   fontSize: "0.82rem",
                   color: "#64748B",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
-                 {formatAge(child.dob)} old
+                {formatAge(child.dob)} old
               </span>
               <span
                 style={{
                   fontSize: "0.82rem",
                   color: "#64748B",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                 }}
               >
                 Born {format(new Date(child.dob), "dd MMMM yyyy")}
@@ -225,7 +225,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
                   style={{
                     fontSize: "0.82rem",
                     color: "#64748B",
-                    fontFamily: "DM Sans, sans-serif",
+                    fontFamily: "Poppins, sans-serif",
                   }}
                 >
                   🩸 {child.blood_group}
@@ -235,7 +235,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
                 style={{
                   fontSize: "0.72rem",
                   color: "#94A3B8",
-                  fontFamily: "DM Sans, sans-serif",
+                  fontFamily: "Poppins, sans-serif",
                   fontStyle: "italic",
                 }}
               >
@@ -259,7 +259,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
                 fontSize: "0.78rem",
                 fontWeight: 600,
                 color: "#475569",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               Immunisation Progress
@@ -269,7 +269,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
                 fontSize: "0.78rem",
                 fontWeight: 700,
                 color: "#0891B2",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               {completionPct}%
@@ -348,7 +348,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
               cursor: "pointer",
               fontSize: "0.8rem",
               fontWeight: 600,
-              fontFamily: "DM Sans, sans-serif",
+              fontFamily: "Poppins, sans-serif",
               transition: "all 0.15s",
             }}
           >
@@ -364,7 +364,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
             textAlign: "center",
             padding: 60,
             color: "#94A3B8",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
           }}
         >
           Loading schedule...
@@ -373,7 +373,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
         <div
           style={{
             color: "#DC2626",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             padding: 20,
             textAlign: "center",
           }}
@@ -386,7 +386,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
             textAlign: "center",
             padding: 40,
             color: "#94A3B8",
-            fontFamily: "DM Sans, sans-serif",
+            fontFamily: "Poppins, sans-serif",
             background: "#f8feff",
             borderRadius: 12,
           }}
@@ -405,7 +405,7 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
                 marginBottom: 14,
                 fontSize: "0.8rem",
                 color: "#1D4ED8",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
               }}
             >
               Click any vaccine to record or update vaccination details
@@ -473,7 +473,7 @@ function StatPill({
           fontWeight: 700,
           fontSize: "0.95rem",
           color,
-          fontFamily: "DM Serif Display, serif",
+          fontFamily: "Poppins",
         }}
       >
         {count}
@@ -483,7 +483,7 @@ function StatPill({
           fontSize: "0.72rem",
           color,
           opacity: 0.85,
-          fontFamily: "DM Sans, sans-serif",
+          fontFamily: "Poppins, sans-serif",
           fontWeight: 600,
         }}
       >

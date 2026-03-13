@@ -61,7 +61,7 @@ export function VaccineTimeline({ groups, onVaccineClick, isDoctor }: Props) {
                 background: headerBg,
                 border: "none",
                 cursor: "pointer",
-                fontFamily: "DM Sans, sans-serif",
+                fontFamily: "Poppins, sans-serif",
                 transition: "background 0.15s",
               }}
             >
@@ -84,7 +84,7 @@ export function VaccineTimeline({ groups, onVaccineClick, isDoctor }: Props) {
                     fontWeight: 700,
                     fontSize: "0.9rem",
                     color: headerColor,
-                    fontFamily: "DM Serif Display, serif",
+                    fontFamily: "Poppins",
                   }}
                 >
                   {group.label}
@@ -176,7 +176,7 @@ export function VaccineTimeline({ groups, onVaccineClick, isDoctor }: Props) {
                               fontWeight: 700,
                               fontSize: "0.875rem",
                               color: "#0F172A",
-                              fontFamily: "DM Serif Display, serif",
+                              fontFamily: "Poppins",
                             }}
                           >
                             {entry.vaccine.name}
@@ -191,7 +191,7 @@ export function VaccineTimeline({ groups, onVaccineClick, isDoctor }: Props) {
                             fontSize: "0.75rem",
                             color: "#64748B",
                             marginTop: 2,
-                            fontFamily: "DM Sans, sans-serif",
+                            fontFamily: "Poppins, sans-serif",
                           }}
                         >
                           {entry.vaccine.full_name}
@@ -202,7 +202,7 @@ export function VaccineTimeline({ groups, onVaccineClick, isDoctor }: Props) {
                               fontSize: "0.7rem",
                               color: "#94A3B8",
                               marginTop: 3,
-                              fontFamily: "DM Sans, sans-serif",
+                              fontFamily: "Poppins, sans-serif",
                             }}
                           >
                             Protects against:{" "}
@@ -216,7 +216,7 @@ export function VaccineTimeline({ groups, onVaccineClick, isDoctor }: Props) {
                               color: "#16A34A",
                               marginTop: 4,
                               fontWeight: 600,
-                              fontFamily: "DM Sans, sans-serif",
+                              fontFamily: "Poppins, sans-serif",
                             }}
                           >
                             ✓ Administered:{" "}
@@ -235,7 +235,7 @@ export function VaccineTimeline({ groups, onVaccineClick, isDoctor }: Props) {
                               color: "#64748B",
                               marginTop: 2,
                               fontStyle: "italic",
-                              fontFamily: "DM Sans, sans-serif",
+                              fontFamily: "Poppins, sans-serif",
                             }}
                           >
                             "{entry.vaccination.notes}"
@@ -247,7 +247,7 @@ export function VaccineTimeline({ groups, onVaccineClick, isDoctor }: Props) {
                           style={{
                             fontSize: "0.7rem",
                             color: "#94A3B8",
-                            fontFamily: "DM Sans, sans-serif",
+                            fontFamily: "Poppins, sans-serif",
                           }}
                         >
                           Due {format(entry.dueDate, "dd MMM yy")}
@@ -259,7 +259,7 @@ export function VaccineTimeline({ groups, onVaccineClick, isDoctor }: Props) {
                               fontSize: "0.7rem",
                               color: "#2563EB",
                               fontWeight: 600,
-                              fontFamily: "DM Sans, sans-serif",
+                              fontFamily: "Poppins, sans-serif",
                             }}
                           >
                             + Record
@@ -296,7 +296,7 @@ function MiniTag({
         fontWeight: 700,
         padding: "2px 7px",
         borderRadius: 999,
-        fontFamily: "DM Sans, sans-serif",
+        fontFamily: "Poppins, sans-serif",
       }}
     >
       {label}
