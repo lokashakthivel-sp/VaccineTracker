@@ -4,6 +4,7 @@ import type { Child } from "../types";
 import { ChildDetailView } from "./ChildDetailView";
 import { formatAge } from "../lib/vaccineSchedule";
 import { DoctorLocationSetup } from "../components/DoctorLocationSetup";
+import { DNA } from "react-loader-spinner";
 
 export function DoctorDashboard() {
   const [query, setQuery] = useState("");
@@ -447,20 +448,17 @@ export function DoctorDashboard() {
             gap: 12,
           }}
         >
-          <div
-            style={{
-              width: 48,
-              height: 48,
-              borderRadius: "50%",
-              border: "3px solid #E2E8F0",
-              borderTopColor: "#06B6D4",
-              animation: "spin 0.8s linear infinite",
-            }}
+          <DNA
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="dna-loading"
+            wrapperStyle={{}}
+            wrapperClass="dna-wrapper"
           />
           <div style={{ color: "#94A3B8", fontSize: "0.875rem" }}>
             Loading...
           </div>
-          <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
         </div>
       )}
 

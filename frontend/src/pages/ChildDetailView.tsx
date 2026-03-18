@@ -12,7 +12,7 @@ import { Modal } from "../components/Modal";
 import { VaccinationForm } from "../components/VaccinationForm";
 import { useAuth } from "../context/AuthContext";
 import { downloadCertificate } from "../lib/apiClient";
-
+import { DNA } from "react-loader-spinner";
 interface Props {
   child: Child;
   onBack: () => void;
@@ -365,8 +365,20 @@ export function ChildDetailView({ child, onBack, isDoctor }: Props) {
             padding: 60,
             color: "#94A3B8",
             fontFamily: "Poppins, sans-serif",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
           }}
         >
+          <DNA
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="dna-loading"
+            wrapperStyle={{}}
+            wrapperClass="dna-wrapper"
+          />
           Loading schedule...
         </div>
       ) : error ? (

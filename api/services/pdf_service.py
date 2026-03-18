@@ -47,7 +47,7 @@ def _ps(name, font="Helvetica", size=10, color=NAVY, align=TA_LEFT, leading=None
         sb=0, sa=0) -> ParagraphStyle:
     return ParagraphStyle(
         name, fontName=font, fontSize=size, textColor=color,
-        alignment=align, leading=leading or size * 1.35,
+        alignment=align, leading=leading or size * 1.35, # pyright: ignore[reportArgumentType]
         spaceBefore=sb, spaceAfter=sa,
     )
 

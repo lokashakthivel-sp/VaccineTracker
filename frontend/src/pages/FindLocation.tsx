@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { supabase } from "../lib/supabase";
 import type { DoctorProfile } from "../types";
+import { DNA } from "react-loader-spinner";
 
 declare global {
   interface Window {
@@ -325,7 +326,7 @@ export function FindDoctors() {
             whiteSpace: "nowrap",
           }}
         >
-          {loading ? "⏳ Searching..." : "Find Doctors Near Me"}
+          {loading ? " Searching..." : "Find Doctors Near Me"}
         </button>
       </div>
 
@@ -437,7 +438,16 @@ export function FindDoctors() {
               }}
             >
               <div style={{ textAlign: "center" }}>
-                <div style={{ fontSize: 32, marginBottom: 8 }}>⏳</div>
+                <div style={{ fontSize: 32, marginBottom: 8 }}>
+                  <DNA
+                    visible={true}
+                    height="80"
+                    width="80"
+                    ariaLabel="dna-loading"
+                    wrapperStyle={{}}
+                    wrapperClass="dna-wrapper"
+                  />
+                </div>
                 Finding doctors...
               </div>
             </div>

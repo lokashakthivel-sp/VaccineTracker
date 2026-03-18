@@ -7,6 +7,7 @@ import { ChildForm } from "../components/ChildForm";
 import { WhatsAppSettings } from "../components/WhatsAppSettings";
 import { ChildDetailView } from "./ChildDetailView";
 import type { Child } from "../types";
+import { DNA } from "react-loader-spinner";
 
 export function ParentDashboard() {
   const { profile } = useAuth();
@@ -139,8 +140,17 @@ export function ParentDashboard() {
             fontFamily: "Poppins, sans-serif",
           }}
         >
-          <div style={{ fontSize: 32, marginBottom: 12 }}>⏳</div>Loading
-          children...
+          <div style={{ fontSize: 32, marginBottom: 12 }}>
+            <DNA
+              visible={true}
+              height="80"
+              width="80"
+              ariaLabel="dna-loading"
+              wrapperStyle={{}}
+              wrapperClass="dna-wrapper"
+            />
+          </div>
+          Loading children...
         </div>
       ) : children.length === 0 ? (
         <div
